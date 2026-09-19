@@ -1,0 +1,9 @@
+when:
+  event: [push, manual]
+
+steps:
+  - name: test
+    image: alpine:3.20
+    commands:
+      - echo "ci demo01 ok"
+      - uname -a
